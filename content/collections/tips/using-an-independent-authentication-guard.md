@@ -21,7 +21,7 @@ If you'd like Statamic to use its own guards, you can configure it that way in y
 
 'guards' => [
     'cp' => 'statamic', // the guard when using the cp
-    'web' => 'statamic', // the guard when using Statamic frontend routes
+    'web' => 'web', // the guard when using Statamic frontend routes
 ],
 ```
 
