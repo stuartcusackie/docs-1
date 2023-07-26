@@ -5,6 +5,14 @@ template: page
 blueprint: page
 id: 75be125b-7d92-496c-ac5d-7098560d3d44
 ---
+## Important Preface
+
+Static caching can lead to unexpected results when protecting content. Static content is cached on its first render, regardless of the visitor's authenticated status. 
+
+For example, if a control panel user updates a protected entry and then views it, that entry could be cached without any protection as the authenicated user saw it, effectively making it public. 
+
+The simplest way to solve this problem is to add protected entries to the `exclude` array in the `static_caching.php` config file.
+
 ## Overview
 
 You may deny front-end access to your content on a **per-page**, **per-collection**, or **site-wide** basis.
